@@ -35,10 +35,17 @@ From a local clone:
 grok plugin install . --trust
 ```
 
-After install, the skills show up as `/architect`, `/remember`, `/review`, `/recover`, and `/imprint`. If a name collides with a Grok built-in, use the qualified form:
+After install, invoke the skills with these commands (verified against a live Grok session):
 
-- `/rex-skills:review`
-- `/rex-skills:remember`
+| Skill | Command that actually runs this plugin |
+|---|---|
+| architect | `/architect` |
+| imprint | `/imprint` |
+| recover | `/recover` |
+| remember | `/rex-skills:remember` |
+| review | `/rex-skills:review` |
+
+`/architect`, `/imprint`, and `/recover` work as bare names. `/remember` and `/review` collide with Grok built-ins, so the bare names do **not** run this plugin — use `/rex-skills:remember` and `/rex-skills:review`. The qualified form `/rex-skills:<name>` also works for all five.
 
 If the plugin is listed but inactive, run `grok plugin enable rex-skills` or press `Space` on it in `/plugins`.
 
@@ -62,18 +69,18 @@ This is not a grilling session. It is a thinking session — collaborative, not 
 
 ---
 
-### `/remember`
+### `/rex-skills:remember`
 
 **Use at the end and start of every session.**
 
 AI has no memory between sessions. Every new session starts blank. This skill fixes that.
 
-- `/remember save` — at end of session, compress what matters into memory.md
-- `/remember restore` — at start of new session, restore full context and confirm before continuing
+- `/rex-skills:remember save` — at end of session, compress what matters into memory.md
+- `/rex-skills:remember restore` — at start of new session, restore full context and confirm before continuing
 
 ---
 
-### `/review`
+### `/rex-skills:review`
 
 **Use after building any feature.**
 
@@ -110,10 +117,10 @@ Extract the visual patterns that matter for consistency and save them to ui-regi
 ## The Engineering Loop
 
 ```
-/architect  →  Build  →  /review  →  Ship
+/architect  →  Build  →  /rex-skills:review  →  Ship
                  ↓
 /imprint  (after every UI component)
-/remember  (end and start of every session)
+/rex-skills:remember  (end and start of every session)
 /recover   (when something breaks)
 ```
 
