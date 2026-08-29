@@ -1,11 +1,11 @@
 {
-  "name": "jsm-skills",
-  "displayName": "JSM Skills",
+  "name": "rex-skills",
+  "displayName": "Rex Skills",
   "description": "Engineering-discipline skills for Grok: plan before you code (/architect), save and restore session context (/remember), review for correctness not just working (/review), diagnose failures before patching (/recover), and lock UI patterns into a registry (/imprint).",
   "version": "1.0.1",
   "author": {
-    "name": "JavaScript Mastery",
-    "url": "https://www.youtube.com/@javascriptmastery"
+    "name": "DevRex",
+    "url": "https://github.com/Rexzy2005"
   },
   "homepage": "https://github.com/Rexzy2005/rex-coding-agent",
   "repository": "https://github.com/Rexzy2005/rex-coding-agent",
@@ -18,7 +18,7 @@
     "imprint",
     "engineering",
     "skills",
-    "javascript-mastery"
+    "rex"
   ],
   "skills": "./skills/"
 }

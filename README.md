@@ -4,7 +4,7 @@
 
 AI agents are powerful. They're also stateless, pattern-matching tools that will confidently build the wrong thing if you let them.
 
-JSM Skills give your AI agent the engineering discipline it doesn't have by default — memory between sessions, architectural thinking before you write a line, and structured review after. Five slash commands that keep you in the driver's seat.
+Rex Skills give your AI agent the engineering discipline it doesn't have by default — memory between sessions, architectural thinking before you write a line, and structured review after. Five slash commands that keep you in the driver's seat.
 
 They work with any agent that supports the SKILL.md format: Grok, Claude Code, Cursor, Windsurf, Codex, Cline, and more.
 
@@ -20,7 +20,7 @@ Add this repo as a marketplace, then install the plugin:
 
 ```bash
 grok plugin marketplace add Rexzy2005/rex-coding-agent
-grok plugin install jsm-skills --trust
+grok plugin install rex-skills --trust
 ```
 
 Or install the plugin directly (no marketplace step):
@@ -37,10 +37,10 @@ grok plugin install . --trust
 
 After install, the skills show up as `/architect`, `/remember`, `/review`, `/recover`, and `/imprint`. If a name collides with a Grok built-in, use the qualified form:
 
-- `/jsm-skills:review`
-- `/jsm-skills:remember`
+- `/rex-skills:review`
+- `/rex-skills:remember`
 
-If the plugin is listed but inactive, run `grok plugin enable jsm-skills` or press `Space` on it in `/plugins`.
+If the plugin is listed but inactive, run `grok plugin enable rex-skills` or press `Space` on it in `/plugins`.
 
 ### Other agents
 
@@ -121,7 +121,7 @@ Extract the visual patterns that matter for consistency and save them to ui-regi
 
 ## Learn More
 
-Built by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) — development education for serious engineers.
+Built by [DevRex](https://github.com/Rexzy2005) — development education for serious engineers.
 
 ---
 

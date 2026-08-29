@@ -1,7 +1,7 @@
 {
   "version": 1,
   "plugins": {
-    "jsm-skills": {
+    "rex-skills": {
       "version": "1.0.1",
       "components": {
         "skills": [

@@ -1,13 +1,13 @@
 {
-  "name": "jsm-skills",
-  "description": "JSM Skills — plan, remember, review, recover, and imprint UI patterns so Grok builds with engineering discipline.",
+  "name": "rex-skills",
+  "description": "Rex Skills — plan, remember, review, recover, and imprint UI patterns so Grok builds with engineering discipline.",
   "owner": {
-    "name": "JavaScript Mastery",
-    "url": "https://www.youtube.com/@javascriptmastery"
+    "name": "DevRex",
+    "url": "https://github.com/Rexzy2005"
   },
   "plugins": [
     {
-      "name": "jsm-skills",
+      "name": "rex-skills",
       "description": "Five slash commands that keep you in the driver's seat: /architect before building, /remember between sessions, /review after a feature, /recover when something breaks, /imprint after every UI component.",
       "category": "development",
       "version": "1.0.1",
@@ -23,7 +23,7 @@
         "recover",
         "imprint",
         "engineering",
-        "javascript-mastery"
+        "rex"
       ]
     }
   ]
