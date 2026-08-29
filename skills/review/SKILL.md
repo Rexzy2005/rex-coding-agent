@@ -1,6 +1,7 @@
 ---
 name: review
-description: After building a feature, verify it matches what was planned, respects the system architecture and design standards, and is ready for production. Reports issues clearly so the developer decides what to fix.
+description: After building a feature, verify it matches what was planned, respects the system architecture and design standards, and is ready for production. Reports issues clearly so the developer decides what to fix. Use after implementing a feature, before shipping, or when the user runs /review.
+when-to-use: review a feature, check plan alignment, production readiness, /review
 ---
 
 Building is not done when the code runs. It is done when the code is correct.

@@ -6,7 +6,7 @@ AI agents are powerful. They're also stateless, pattern-matching tools that will
 
 JSM Skills give your AI agent the engineering discipline it doesn't have by default — memory between sessions, architectural thinking before you write a line, and structured review after. Five slash commands that keep you in the driver's seat.
 
-They work with any agent that supports the SKILL.md format: Claude Code, Cursor, Windsurf, Codex, Cline, and more.
+They work with any agent that supports the SKILL.md format: Grok, Claude Code, Cursor, Windsurf, Codex, Cline, and more.
 
 **Philosophy:** The problem isn't that AI writes bad code. It's that developers stop thinking when it writes fast code. These skills keep you thinking.
 
@@ -14,8 +14,38 @@ They work with any agent that supports the SKILL.md format: Claude Code, Cursor,
 
 ## Install
 
+### Grok
+
+Add this repo as a marketplace, then install the plugin:
+
 ```bash
-npx skills@latest add JavaScript-Mastery-Pro/jsm-agent-skill
+grok plugin marketplace add Rexzy2005/rex-coding-agent
+grok plugin install jsm-skills --trust
+```
+
+Or install the plugin directly (no marketplace step):
+
+```bash
+grok plugin install Rexzy2005/rex-coding-agent --trust
+```
+
+From a local clone:
+
+```bash
+grok plugin install . --trust
+```
+
+After install, the skills show up as `/architect`, `/remember`, `/review`, `/recover`, and `/imprint`. If a name collides with a Grok built-in, use the qualified form:
+
+- `/jsm-skills:review`
+- `/jsm-skills:remember`
+
+If the plugin is listed but inactive, run `grok plugin enable jsm-skills` or press `Space` on it in `/plugins`.
+
+### Other agents
+
+```bash
+npx skills@latest add Rexzy2005/rex-coding-agent
 ```
 
 ---

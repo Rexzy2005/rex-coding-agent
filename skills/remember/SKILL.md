@@ -1,6 +1,8 @@
 ---
 name: remember
-description: Save what matters at the end of a session so the next session picks up exactly where you left off. Or restore context at the start of a new session so nothing is lost between them.
+description: Save what matters at the end of a session so the next session picks up exactly where you left off. Or restore context at the start of a new session so nothing is lost between them. Use at session start or end, or when the user runs /remember, /remember save, or /remember restore.
+when-to-use: save session memory, restore context, continue from last session, /remember save, /remember restore
+argument-hint: "save | restore"
 ---
 
 AI has no memory between sessions. Every new session starts blank. This skill fixes that.
@@ -163,11 +165,11 @@ To save memory at the end of a session, run /remember save.
 
 Read `memory.md` first. Then check for these specific context files if they exist and read only those:
 
+- `AGENTS.md`, `.grok/rules/` — Grok and Codex
 - `CLAUDE.md`, `.claude/context.md` — Claude Code
 - `.github/copilot-instructions.md` — GitHub Copilot
 - `.cursorrules`, `.cursor/rules/` — Cursor
 - `.windsurfrules` — Windsurf
-- `AGENTS.md` — Codex
 - `.clinerules` — Cline
 - `context.md` — generic fallback
 
@@ -177,7 +179,7 @@ When restoring, never repeat or surface raw secrets from any source. If a secret
 
 ### Step 3 — Confirm what was restored
 
-Do not start building. Do not assume the developer wants to continue immediately. Summarise what was restored so the developer can verify Claude understood correctly.
+Do not start building. Do not assume the developer wants to continue immediately. Summarise what was restored so the developer can verify the agent understood correctly.
 
 ```
 Memory restored. Here is where we are:

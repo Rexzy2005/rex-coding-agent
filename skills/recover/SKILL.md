@@ -1,6 +1,7 @@
 ---
 name: recover
-description: When something goes wrong during a build, diagnose what type of failure it is before deciding how to respond. Targeted fix, hard reset, or full rethink — the right response depends on the right diagnosis.
+description: When something goes wrong during a build, diagnose what type of failure it is before deciding how to respond. Targeted fix, hard reset, or full rethink — the right response depends on the right diagnosis. Use when a build is broken, a session is going in circles, or the user runs /recover.
+when-to-use: something broke, session is polluted, stuck debugging, hard reset, /recover
 ---
 
 Not every problem is a bug. Not every bug needs debugging.
@@ -71,7 +72,7 @@ The session is polluted. More prompting will not help — it will compound the d
 **Signs:**
 
 - The code runs but produces fundamentally wrong behaviour
-- Claude has been confidently building something that misunderstands a core requirement, library API, or architectural pattern
+- The agent has been confidently building something that misunderstands a core requirement, library API, or architectural pattern
 - The problem is not a bug in the implementation — the implementation itself is wrong
 - Fixing individual pieces will not help because the approach is incorrect
 

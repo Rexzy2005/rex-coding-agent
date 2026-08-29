@@ -1,6 +1,8 @@
 ---
 name: imprint
-description: After building any UI component, extract the visual patterns that matter for consistency and save them to ui-registry.md. So every component built after this one matches what came before.
+description: After building any UI component, extract the visual patterns that matter for consistency and save them to ui-registry.md. So every component built after this one matches what came before. Use after building UI, when checking visual consistency, or when the user runs /imprint or /imprint audit.
+when-to-use: capture UI patterns, ui-registry, visual consistency, imprint audit, /imprint
+argument-hint: "[filepath] | audit"
 ---
 
 UI consistency does not happen by accident. It happens because every component is built with awareness of what already exists.
@@ -153,9 +155,9 @@ developer knowing about]
 
 The registry is not just a record. It is the consistency enforcer for every future session.
 
-At the start of any session that involves UI work, Claude reads ui-registry.md before writing any component. When building a new card, it checks how existing cards were built. When building a new button, it checks what button patterns already exist. When building a new status badge, it matches the exact classes already in use.
+At the start of any session that involves UI work, the agent reads ui-registry.md before writing any component. When building a new card, it checks how existing cards were built. When building a new button, it checks what button patterns already exist. When building a new status badge, it matches the exact classes already in use.
 
-The registry grows as the project grows. The more components are imprinted, the more consistent every new component becomes — because Claude always has a precise reference for what already exists.
+The registry grows as the project grows. The more components are imprinted, the more consistent every new component becomes — because the agent always has a precise reference for what already exists.
 
 ---
 

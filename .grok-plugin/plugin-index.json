@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "plugins": {
+    "jsm-skills": {
+      "version": "1.0.1",
+      "components": {
+        "skills": [
+          {
+            "name": "architect",
+            "description": "Think through what you are about to build like a senior engineer before writing any code. Use before writing code, when planning a feature, or when the user runs /architect."
+          },
+          {
+            "name": "remember",
+            "description": "Save what matters at the end of a session, or restore context at the start of a new one. Use when the user runs /remember, /remember save, or /remember restore."
+          },
+          {
+            "name": "review",
+            "description": "After building a feature, verify it matches the plan, respects the architecture, and is production-ready. Use after implementing a feature, before shipping, or when the user runs /review."
+          },
+          {
+            "name": "recover",
+            "description": "Diagnose whether a failure needs a targeted fix, a hard reset, or a full rethink. Use when a build is broken, a session is going in circles, or the user runs /recover."
+          },
+          {
+            "name": "imprint",
+            "description": "Extract visual patterns from a UI component into ui-registry.md so later components match. Use after building UI or when the user runs /imprint or /imprint audit."
+          }
+        ]
+      }
+    }
+  }
+}
